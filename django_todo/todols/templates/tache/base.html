@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des tâches</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    
+    <div class="flex justify-end p-4 bg-gray-200 " >
+     <button class="bg-red-500 text-white py-2 px-4 rounded hover:bg-green-600" id="dec">
+    <a href="{% url 'deconnexion' %}">Se déconnecter</a>
+</button>
+    </div>
+
+<div class="flex justify-center pt-16 pb-16 px-4">
+<div class="flex flex-col w-full max-w-3xl bg-white rounded-xl shadow-sm p-6">
+
+{% block content %}
+
+{% endblock %}
+
+</div>
+</div>
+
+</body>
+</html>
